@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FocusTimer para estudo pomodoro" />
+    <title>FocusTimer v2.0</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <script src="./src/main.js" defer type="module"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="timer">
+        <section id="time" class="flex">
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+          <button class="ph ph-play-circle" data-action="toggleRunning"></button>
+          <button class="ph ph-pause-circle" data-action="toggleRunning"></button>
+          <button class="ph ph-stop-circle" data-action="reset"></button>
+          <button class="ph ph-plus-circle" data-action="add"></button>
+          <button class="ph ph-minus-circle" data-action="subtract"></button>
+        </section>
+      </div>
+
+      <div class="sounds">
+        <section id="nature" class="flex-d">
+          <button class="ph ph-tree" data-action="toggleMusicTree"></button>
+          <button class="ph ph-cloud-rain" data-action="toggleMusicRain"></button>
+        </section>
+
+        <section id="city" class="flex-d">
+        <button class="ph ph-storefront" data-action="toggleMusicStore"></button>
+        <button class="ph ph-fire" data-action="toggleMusicFire"></button>
+        </section>
+      </div>
+
+    </div>
+  </body>
+</html>

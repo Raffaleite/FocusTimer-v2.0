@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+
+  --color-button: hsl(240, 6%, 21%);
+  --color-button-press: hsl(0, 0%, 100%);
+  --bg-button: hsl(240, 9%, 94%);
+  --bg-button-hover: hsl(240, 18%, 88%);
+  --bg-button-press: hsl(194, 97%, 31%);
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex-d{
+  display: flex;
+  gap: 3.2rem;
+}
+
+
+#app{
+  display: flex;
+  align-items: center;
+  gap: 19.2rem;
+  
+}
+
+.timer{
+  display: grid;
+  align-content: center;
+}
+
+#time{
+  font-size: 12.6rem;
+  font-weight: 500;
+
+  color: var(--color-button);
+}
+
+#controls{
+  margin-top: 1rem;
+  gap: 4rem;
+
+}
+
+#controls button{
+  font-size: 4.8rem;
+  color: var(--color-button);
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+
+}
+
+.sounds button{
+  border: none;
+  border-radius: 2.4rem;
+  background-color: var(--bg-button);
+  color: var(--color-button);
+
+  font-size: 5.6rem;
+  padding: 3.8rem 3.1rem;
+
+  cursor: pointer;
+
+}
+
+.sounds button:hover{
+  background-color: var(--bg-button-hover);
+}
+
+
+#nature{
+  margin-bottom: 3.2rem;
+}
+
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+    display: none;
+  }
+
+
+.rain-on .ph-cloud-rain{
+  background-color: var(--bg-button-press);
+  color: var(--color-button-press);
+}
+
+.rain-on .ph-cloud-rain:hover {
+  background-color:  hsl(194, 91%, 18%);
+}
+
+.florest-on .ph-tree {
+  background-color:  hsl(138, 91%, 25%);
+  color: var(--color-button-press);
+}
+
+.florest-on .ph-tree:hover {
+  background-color:  hsl(138, 91%, 18%);
+}
+
+.fire-on .ph-fire {
+  background-color:  hsl(0, 91%, 25%);
+  color: var(--color-button-press);
+}
+
+.fire-on .ph-fire:hover {
+  background-color:  hsl(0, 88%, 16%);
+}
+
+.coffee-on .ph-storefront {
+  background-color:  hsl(59, 91%, 25%);
+  color: var(--color-button-press);
+}
+
+.coffee-on .ph-storefront:hover{
+  background-color:  hsl(58, 89%, 17%);
+}
+
+
+#florest{
+  background-color: black;
+}
